@@ -54,7 +54,7 @@ main{
 }
 main hr{
     border:1px solid rgb(48, 48, 48);
-    margin:0 10%;
+    margin:0 5vw;
 }
 .firstSection{
     height:100vh;
@@ -62,6 +62,19 @@ main hr{
     width:100%;
     display:flex;
     justify-content: space-between;
+}
+.projects a{
+    height: 30px;
+    width: 30px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.projects a:hover{
+    background-color: gray;
+    transform: scale(110%);
+    transition:1s ease;
 }
 .leftSection{
     width:55%;
@@ -109,4 +122,63 @@ main hr{
     height:100vh;
     width:100%;
     padding:0 5vw;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.headingProject{
+
+}
+.headingProject p{
+    opacity:0.4;
+    margin-bottom:1vh;
+}
+.headingProject h1{
+    font-size:2.3rem;
+    font-weight:600;
+}
+.projects{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:10vh;
+}
+.projectsName{
+    height:40vh;
+    width:30%;
+    background-color: rgb(107, 107, 109);
+    border-radius:10px;
+    position: relative;
+    overflow:hidden;
+}
+.projectsName img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+}
+.projectsName:hover>img{
+    transform:scale(111%);
+    transition:ease 0.5s;
+}
+.projectDetails{
+    position:absolute;
+    top:0;
+    border-radius:10px;
+    width:100%;
+    height:100%;
+    background:linear-gradient(rgb(61, 61, 61), rgb(16, 16, 16));
+    transform:translateY(100%);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    opacity:0.95;
+    padding:0 20px;
+    gap:20px;
+    text-align:center;
+}
+.projectsName:hover .projectDetails{
+    transform:translate(0);
+    transition: 0.5s ease;
 }
