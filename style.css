@@ -51,10 +51,14 @@ nav{
 
 main{
     width:100%;
-    padding:0 5vw;
+}
+main hr{
+    border:1px solid rgb(48, 48, 48);
+    margin:0 10%;
 }
 .firstSection{
     height:100vh;
+    padding:0 5vw;
     width:100%;
     display:flex;
     justify-content: space-between;
@@ -100,7 +104,9 @@ main{
         transform: translateY(-1%);
     }
 }
+
 .secondSection{
     height:100vh;
-    background-color: rgb(65, 65, 65);
+    width:100%;
+    padding:0 5vw;
 }
