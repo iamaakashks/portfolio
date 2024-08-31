@@ -286,3 +286,41 @@ textarea{
     justify-content: center;
     margin-top:2rem;
 }
+
+footer{
+    width:100%;
+}
+.headingConnect{
+    padding:0 5vw;
+    height:10vh;
+    border-top:1px solid rgb(45, 45, 45);
+    display:flex;
+    align-items: center;
+}
+.headingConnect ul{
+    height:100%;
+    width:30%;
+    display:flex;
+    align-items:center;
+    list-style: none;
+    justify-content: space-between;
+    padding:0 6rem;
+}
+.headingConnect ul li a{
+    color:white;
+    text-decoration: none;
+    font-size:1.6rem;
+}
+.headingConnect ul li a:hover{
+    text-shadow:0 0 20px white;
+    transition: 500ms ease;
+}
+.madeWithLover{
+    width:70%;
+    text-align: center;
+    display:flex;
+    justify-content: space-evenly;
+    gap:6rem;
+    font-weight: 100;
+    font-size:smaller;
+}
