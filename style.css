@@ -92,14 +92,13 @@ main hr{
     font-weight:600;
 }
 .rightSection{
-    width:40%;
+    width:45%;
     display: flex;
     justify-content: center;
     align-items:center;
 }
 .rightSection img{
-    width:80%;
-    height:60%;
+    width:75%;
     object-fit: cover;
     animation-name:anime;
     animation-duration:5s;
@@ -139,12 +138,11 @@ main hr{
     width:100%;
     display:flex;
     justify-content:space-between;
-    padding:10vh;
+    padding: 10vh 0;
 }
 .projectsName{
     height:40vh;
     width:30%;
-    background-color: rgb(107, 107, 109);
     border-radius:10px;
     position: relative;
     overflow:hidden;
@@ -291,7 +289,7 @@ footer{
     width:100%;
 }
 .headingConnect{
-    padding:0 5vw;
+    padding:0 2rem;
     height:10vh;
     border-top:1px solid rgb(45, 45, 45);
     display:flex;
@@ -323,4 +321,93 @@ footer{
     gap:6rem;
     font-weight: 100;
     font-size:smaller;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    .rightSection img{
+        width:60%;
+    }
+    .leftSection h1{
+        font-size:2rem;
+    }
+    .leftSection{
+        padding-left:8vw;
+    }
+    .projects{
+        padding: 8vh 0;
+    }
+    .headingProject p{
+        margin-bottom:0.8vh;
+    }
+    .headingProject h1{
+        font-size:2rem;
+    }
+    .headingAbout{
+        width:25%;
+    }
+    .headingAbout p{
+        margin-bottom: 0.8vh;
+    }
+    .headingAbout h1{
+        font-size: 2rem;
+    }
+    .textAbout{
+        line-height:4vh;
+        font-size:0.9rem;
+    }
+    .headingContact h1{
+        font-size:2rem;
+    }
+    .headingContact p{
+        margin-bottom:0.8vh;
+    }
+    /* footer */
+    .headingConnect{
+        padding:0rem;
+    }
+    .headingConnect ul li{
+        margin-right:0.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .rightSection img{
+        width:60%;
+    }
+    .leftSection h1{
+        font-size:1.6rem;
+    }
+    .leftSection{
+        padding-left:5vw;
+    }
+    .projects{
+        padding: 10vh 0;
+    }
+    .headingAbout{
+        width:30%;
+    }
+    .textAbout{
+        line-height:3.2vh;
+        font-size:0.8rem;
+    }
+    /* footer */
+    .headingConnect{
+        padding:0;
+    }
+    .headingConnect ul li{
+        margin-right:0.8rem;
+    }
+    .madeWithLover{
+        justify-content: center;
+    }
+
+    .projectsName{
+        height:30vh;
+    }
+    .projectDetails{
+        padding:0 12px;
+        gap:12px;
+        text-align:center;
+        font-size:0.8rem;
+    }
 }
