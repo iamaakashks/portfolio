@@ -44,6 +44,9 @@ nav{
 .right ul li:hover{
     transform: scale(110%);
 }
+.ri-menu-fill{
+    display:none;
+}
 .left a{
     font-size:1.5rem;
     font-weight:600;
@@ -89,7 +92,7 @@ main hr{
     font-weight:100;
 }
 .textBold{
-    font-weight:600;
+    font-weight:700;
 }
 .rightSection{
     width:45%;
@@ -294,12 +297,13 @@ footer{
     border-top:1px solid rgb(45, 45, 45);
     display:flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 .headingConnect ul{
     height:100%;
-    width:30%;
     display:flex;
     align-items:center;
+    gap:2vw;
     list-style: none;
     justify-content: space-between;
     padding:0 6rem;
@@ -307,23 +311,24 @@ footer{
 .headingConnect ul li a{
     color:white;
     text-decoration: none;
-    font-size:1.6rem;
+    font-size:1.8rem;
 }
 .headingConnect ul li a:hover{
     text-shadow:0 0 20px white;
     transition: 500ms ease;
 }
 .madeWithLover{
-    width:70%;
     text-align: center;
     display:flex;
     justify-content: space-evenly;
-    gap:6rem;
     font-weight: 100;
-    font-size:smaller;
+    font-size:1rem;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px){
+    .ri-menu-fill{
+        display:none;
+    }
     .rightSection img{
         width:60%;
     }
@@ -361,16 +366,26 @@ footer{
     .headingContact p{
         margin-bottom:0.8vh;
     }
-    /* footer */
     .headingConnect{
-        padding:0rem;
+        height:10vh;
+        padding:0 1rem;
     }
-    .headingConnect ul li{
-        margin-right:0.8rem;
+    .headingConnect ul{
+        padding:0;
+        gap:2.3vw;
+    }
+    .headingConnect ul li a{
+        font-size:1.8rem;
+    }
+    .madeWithLover p{
+        font-size:1rem;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
+    .ri-menu-fill{
+        display:none;
+    }
     .rightSection img{
         width:60%;
     }
@@ -390,7 +405,6 @@ footer{
         line-height:3.2vh;
         font-size:0.8rem;
     }
-    /* footer */
     .headingConnect{
         padding:0;
     }
@@ -409,5 +423,164 @@ footer{
         gap:12px;
         text-align:center;
         font-size:0.8rem;
+    }
+    .fourthSection{
+    }
+    .input-box{
+        gap:3vw;
+        margin-bottom: 2vh;
+    }
+    .input-box input{
+        width:35vw;
+    }
+    textarea{
+        width:100%;
+    }
+
+    .headingConnect{
+        height:10vh;
+        padding:0 2rem;
+    }
+    .headingConnect ul{
+        padding:0;
+        gap:2vw;
+    }
+    .headingConnect ul li a{
+        font-size:1.6rem;
+    }
+    .madeWithLover p{
+        font-size:0.8rem;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .right ul li a{
+        display:none;
+    }
+    .ri-menu-fill{
+        display:contents;
+    }
+    .firstSection{
+        display:flex;
+        flex-direction:column-reverse;
+        align-items:center;
+        justify-content: center;
+        gap:4rem;
+    }
+    .leftSection{
+        width:100%;
+    }
+    .leftSection h1{
+        font-size:1.6rem;
+        text-align:center;
+        line-height:2rem;
+    }
+    .rightSection{
+        width:100%;
+    }
+    .rightSection img{
+        width:60%;
+        object-fit: cover;
+    }
+    .secondSection{
+        align-items:center;
+    }
+    .headingProject p{
+        font-size:0.8rem;
+    }
+    .headingProject h1{
+        font-size:1.6rem;
+        text-align:center;
+    }
+    .projects{
+        flex-direction:column;
+        gap:1rem;
+        justify-content:space-between;
+        align-items: center;
+        padding: 3vh 0;
+    }
+    .projectsName{
+       width:60%;
+       height:25vh;
+       border:1px solid rgb(74, 74, 74);
+    }
+    .projectsName img{
+        object-position:top;
+    }
+    .projectDetails{
+        padding:0 10px;
+        gap:10px;
+        text-align:center;
+        font-size:0.7rem;
+    }
+    .thirdSection{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        gap:2rem;
+    }
+    .headingAbout{
+        width:100%;
+        text-align: center;
+    }
+    .headingAbout h1{
+        font-size:1.6rem;
+    }
+    .headingAbout p{
+        font-size: 0.8rem;
+    }
+    .aboutDetails{
+        width:100%;
+        padding:0 1.4rem;
+    }
+    .lineAfterDash{
+        display:none;
+    }
+    .textAbout{
+        line-height:4vh;
+        font-size:0.85rem;
+    }
+    .headingContact p{
+        font-size: 0.8rem;
+    }
+    .headingContact h1{
+        font-size:1.6rem;
+    }
+    .input-box{
+        gap:2vw;
+        margin-bottom: 2vh;
+    }
+    .input-box input{
+        font-size:2vh;
+        width:35vw;
+    }
+    textarea{
+        width:100%;
+        font-size:2vh;
+    }
+    .btnDiv{
+        margin-top:1.2rem;
+    }
+    .btn{
+        font-size:2vh;
+    }
+    .headingConnect{
+        height:8vh;
+        padding:0 1rem;
+    }
+    .headingConnect ul{
+        padding:0;
+        gap:2vw;
+    }
+    .headingConnect ul li a{
+        font-size:1.4rem;
+    }
+    .madeWithLover{
+        align-items:center;
+    }
+    .madeWithLover p{
+        font-size:0.7rem;
     }
 }
