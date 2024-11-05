@@ -122,7 +122,7 @@ main hr{
 }
 
 .secondSection{
-    height:100vh;
+    min-height:100vh;
     width:100%;
     padding:0 5vw;
     display:flex;
@@ -142,10 +142,12 @@ main hr{
     display:flex;
     justify-content:space-between;
     padding: 10vh 0;
+    display:flex;
+    flex-wrap:wrap;
 }
 .projectsName{
-    height:40vh;
-    width:30%;
+    height:30vh;
+    width:15%;
     border-radius:10px;
     position: relative;
     overflow:hidden;
@@ -176,6 +178,7 @@ main hr{
     padding:0 20px;
     gap:20px;
     text-align:center;
+    font-size:small;
 }
 .projectsName:hover .projectDetails{
     transform:translate(0);
